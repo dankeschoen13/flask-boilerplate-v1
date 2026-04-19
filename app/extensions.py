@@ -7,7 +7,7 @@ from flask_login import LoginManager
 class Base(DeclarativeBase):
     pass
 
-db = SQLAlchemy(model_class=DeclarativeBase)
+db = SQLAlchemy(model_class=Base)
 migrate = Migrate()
 login_manager = LoginManager()
 csrf = CSRFProtect()
